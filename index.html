@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Configuraciones para dispositivos Android y IOS-->
+    <meta name="theme-color" content="#35495e">
+    <!--Optimizacion SEO-->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!--Modificaciones para IOS-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="app-mobile-status-bar-style" content="black-translucent">
+    <!--Iconos-->
+    <link rel="shortcut icon" href="./img/iconfinder_calculator_1055102.png" type="image/png">
+    <link rel="apple-touch-icon" href="./img/iconfinder_calculator_1055102.png" >
+    <link rel="apple-touch-startup-image" href="./img/iconfinder_calculator_1055102.png">
+    <!--Manifest-->
+    <link rel="manifest" href="./manifest.json">
+   
+    <title>Contador</title>
+    <script src="https://unpkg.com/vue@next"></script>
+   
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div id="app" class="app">
+        <h1 class="titulo">{{titulo}}</h1>
+        <hr>
+        <h4 class="contador">{{count}}</h4>
+        <hr>
+            <div class="buttons">
+                <!--Se usa v-on:click para validar en el lado del archivo main
+                    los methodos que se usan
+                    
+                -->
+                <button v-on:click="modCount('dis')">-1</button>
+                <button @click="modCount">+1</button>
+                <!--
+                    Se usaron tambien los siguientes metodos para poder disminuir
+                    y aumentar el contador
+                    <button v-on:click="disminucion">-1</button>
+                    <button @click="aumento">+1</button>
+                -->
+            </div>
+    </div>
+     <!--load-->
+     <script src="./load.js"></script>
+     <!--main-->
+     <script src="js/main.js"></script>
+     
+     <script src="js/mount.js"></script>
+</body>
+</html>

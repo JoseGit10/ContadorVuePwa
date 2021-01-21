@@ -1,0 +1,31 @@
+.app{
+    display: block;
+    text-align: center;
+}
+
+html, 
+body{
+    background-color: #35495e;
+    color: #eee;
+}
+
+.contador{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+button{
+    background-color: #41B883;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: snow;
+    margin: 0 0.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #2d855d;
+}
+
